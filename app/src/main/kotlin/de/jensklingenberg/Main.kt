@@ -15,8 +15,14 @@ data class SapUser(
 
 )
 
+@Extension(to = [SapUser::class,OtherUser::class])
+interface Help{
+    val name: String
+    val email: String
+    val test: Int
+}
 
-@Extension(to = [SapUser::class, OtherUser::class])
+@Extension(to = [SapUser::class])
 data class User(
     val name: String,
     val email: String,
@@ -24,13 +30,14 @@ data class User(
 )
 
 fun main(args: Array<String>) {
-    println("User to JSON")
+
     val user = User(
         name = "Test",
         email = "test@email.com",
         test = 1
     )
 
-    user.toSapUser().name
+   print(user.toSapUser().name)
 
 }
+
