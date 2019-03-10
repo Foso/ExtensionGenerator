@@ -4,8 +4,8 @@
 )](https://github.com/Foso/ExtensionGenerator/blob/master/LICENSE)
   
 
-> Java Annotation Processor that generate extension converter functions to annotated classes.
-The converter functions will map identical field name from source class to target class
+> JVM Annotation Processor that generates Kotlin extension converter functions to annotated classes.
+The converter functions will map identical field names from source class to target class
 
 ## Usage
 
