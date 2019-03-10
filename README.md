@@ -63,7 +63,7 @@ fun User.toOtherUser(): OtherUser {
 
 ### 👷 Project Structure
  * <kbd>app</kbd> - A Kotlin JVM project which uses the annotation processor
- * <kbd>processor</kbd> - A Kotlin JVM project which uses the annotation processor
+ * <kbd>processor</kbd> - The source project of the annotation processor
 
 ## 📜 License
 
